@@ -1874,9 +1874,9 @@ public class PhotoModule
         }
         // Reset the focus first. Camera CTS does not guarantee that
         // cancelAutoFocus is allowed after preview stops.
-        if (mCameraDevice != null && mCameraState != PREVIEW_STOPPED) {
-            mCameraDevice.cancelAutoFocus();
-        }
+        //if (mCameraDevice != null && mCameraState != PREVIEW_STOPPED) {
+        //    mCameraDevice.cancelAutoFocus();
+        //}
         stopPreview();
         // Close the camera now because other activities may need to use it.
         closeCamera();
